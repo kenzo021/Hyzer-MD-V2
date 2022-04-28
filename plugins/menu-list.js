@@ -240,106 +240,106 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
             sections: [
               {
                 "rows": [{
-                  "title": `OWNER BOT`,
+                  "title": `👦 OWNER BOT`,
                   "description": "Nomor Pemilik Bot Chat P/Meminta Save Tidak Akan Di Respon",
                   "rowId": `.owner`
                 },{
-                  "title": "INFO BOT",
+                  "title": "ℹ️ INFO BOT",
                   "description": "Menampilkan Menu Info",
                   "rowId": `${_p}? info`
                 }],
                 "title": "INFORMASI BOT"
               }, {
                 "rows": [{
-                  "title": `☰ SEMUA PERINTAH`,
+                  "title": "📌 ✦SEMUA PERINTAH",
                   "description": "Menampilkan Menu All",
                   "rowId": '.? all'
                   }, {
-                  "title": "☰ ABSEN & VOTING",
+                  "title": "🧾 ✦ABSEN & VOTING",
                   "description": "Menampilkan Menu Absen",
                   "rowId": `${_p}? absen`
                 }, {
-                  "title": "☰ ANIME MENU",
+                  "title": "🧸 ✦ANIME MENU",
                   "description": "Menampilkan Menu Anime",
                   "rowId": `${_p}? anime`
                 }, {
-                  "title": "☰ STICKER & CONVERTER",
+                  "title": "🀄 ✦STICKER & CONVERTER",
                   "description": "Menampilkan Menu Sticker",
                   "rowId": `${_p}? sticker`
                 }, {
-                  "title": "☰ DOWNLOADER MENU",
+                  "title": "📥 ✦DOWNLOADER MENU",
                   "description": "Menampilkan Menu Downloader",
                   "rowId": `${_p}? downloader`
                 }, {
-                  "title": "☰ EXP & LIMIT",
+                  "title": "📊 ✦EXP & LIMIT",
                   "description": "Menampilkan Menu Exp",
                   "rowId": `${_p}? xp`
                 }, {
-                  "title": "☰ FUN MENU",
+                  "title": "🤾 ✦FUN MENU",
                   "description": "Menampilkan Menu Fun",
                   "rowId": `${_p}? fun`
                 }, {
-                  "title": "☰ GAME MENU",
+                  "title": "🎮 ✦GAME MENU",
                   "description": "Menampilkan Menu Game",
                   "rowId": `${_p}? game`
                 }, {
-                  "title": "☰ GITHUB MENU",
+                  "title": "💌 ✦GITHUB MENU",
                   "description": "Menampilkan Menu Github",
                   "rowId": `${_p}? github`
                 }, {
-                  "title": "☰ GROUP MENU",
+                  "title": "📭 ✦GROUP MENU",
                   "description": "Menampilkan Menu Group",
                   "rowId": `${_p}? group`
                 }, {
-                  "title": "☰ IMAGE MENU",
+                  "title": "🖼️ ✦IMAGE MENU",
                   "description": "Menampilkan Menu Image",
                   "rowId": `${_p}? image`
                 }, {
-                  "title": "☰ INTERNET MENU",
+                  "title": "🖥️ ✦INTERNET MENU",
                   "description": "Menampilkan Menu Internet",
                   "rowId": `${_p}? internet`
                 }, {
-                  "title": "☰ ISLAM MENU",
+                  "title": "🧕 ✦ISLAM MENU",
                   "description": "Menampilkan Menu Islam",
                   "rowId": `${_p}? islam`
                 }, {
-                  "title": "☰ KERANG AJAIB",
+                  "title": "🐚 ✦KERANG AJAIB",
                   "description": "Menampilkan Menu Kerang",
                   "rowId": `${_p}? kerang`
                 }, {
-                  "title": "☰ MAKER MENU",
+                  "title": "✒️ ✦MAKER MENU",
                   "description": "Menampilkan Menu Maker",
                   "rowId": `${_p}? maker`
                 }, {
-                  "title": "☰ OWNER MENU",
+                  "title": "🤴 ✦OWNER MENU",
                   "description": "Menampilkan Menu Owner",
                   "rowId": `${_p}? owner`
                 }, {
-                  "title": "☰ PENGUBAH SUARA",
+                  "title": "🎙️ ✦PENGUBAH SUARA",
                   "description": "Menampilkan Menu Voice Changer",
                   "rowId": `${_p}? suara`
                 }, {
-                  "title": "☰ PREMIUM MENU",
+                  "title": "🎀 ✦PREMIUM MENU",
                   "description": "Menampilkan Menu Premium",
                   "rowId": `${_p}? premium`
                 }, {
-                  "title": "☰ QUOTES MENU",
+                  "title": "🙇 ✦QUOTES MENU",
                   "description": "Menampilkan Menu Quotes",
                   "rowId": `${_p}? quotes`
                 }, {
-                  "title": "☰ RPG MENU",
+                  "title": "🎰 ✦RPG MENU",
                   "description": "Menampilkan Menu Rpg",
                   "rowId": `${_p}? rpg`
                 }, {
-                  "title": "☰ STALKER MENU",
+                  "title": "🎑 ✦STALKER MENU",
                   "description": "Menampilkan Menu Stalker",
                   "rowId": `${_p}? stalk`
                 }, {
-                  "title": "☰ SHORT LINK",
+                  "title": "🔗 ✦SHORT LINK",
                   "description": "Menampilkan Menu Short Link",
                   "rowId": `${_p}? shortlink`
                 }, {
-                  "title": "☰ TOOLS MENU",
+                  "title": "⚒️ ✦TOOLS MENU",
                   "description": "Menampilkan Menu Tools",
                   "rowId": `${_p}? tools`
                 }
@@ -416,8 +416,8 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            hydratedFooterText: wm,
            hydratedButtons: [{
             urlButton: {
-               displayText: 'MY WEBSITE',
-               url: 'https://Hyzerr.github.io/'
+               displayText: 'MY GROUP',
+               url: 'https://chat.whatsapp.com/DOSPtlpelDCI8omlamrBJy'
              }
 
            },
