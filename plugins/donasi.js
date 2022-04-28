@@ -1,43 +1,48 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
-let fs = require('fs')
+/**
+ * TOLONG JANGAN GANTI GAMBARNYA,NOMORKU DAN SAWERIAKU
+ * MENDING KALIAN TAMBAHIN NOMOR KALIAN
+*/
+
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let handler = async (m) => {
-    let who
-    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
-    else who = m.sender
-    let user = global.db.data.users[who]
-let anu = `*─────� DONATE 」 ───*
+let duit = `*────── 「 DONATE 」 ──────*
 
 Hai 👋
 Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
 ┌〔 Donasi • Emoney 〕
-├📌Indoosat: 085643354073
+├🏧 085251626154 (OVO/Dana/Pulsa-Tsel)
+├📍 https://saweria.co/xylrndbotz
 └────
 Berapapun donasi kalian akan sangat berarti 👍
 
 Arigatou!
 
 Contact person Owner:
-wa.me/6285643354073 (Owner)
-
-*donasi via follow ig juga boleh*`
+wa.me/6285251626154 (Owner)`
+let message = await prepareWAMessageMedia({ image: {url: 'https://telegra.ph/file/31d9c54096abadf85f213.jpg' }}, { upload: conn.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
      templateMessage: {
          hydratedTemplate: {
-           hydratedContentText: anu,
-           locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/donasi.jpg') }, 
+           imageMessage: message.imageMessage,
+           hydratedContentText: duit,
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍instagram',
-               url: instagram
+               displayText: '🏧 Saweria',
+               url: 'https://saweria.co/xylrndbotz'
              }
 
            },
                {
+             callButton: {
+               displayText: 'Telkomsel',
+               phoneNumber: '+62 852-5162-6154'
+             }
+           },           
+               {
              quickReplyButton: {
-               displayText: 'Back To Menu',
-               id: '.menu',
+               displayText: '🧒 Owner',
+               id: '.owner',
              }
 
            }]
@@ -51,8 +56,9 @@ wa.me/6285643354073 (Owner)
          { messageId: template.key.id }
      )
 }
-handler.help = ['donasi', 'donate']
-handler.tags = ['xp']
-handler.command = /^(donasi|donate)$/i
+
+handler.help = ['donasi']
+handler.tags = ['info']
+handler.command = /^dona(te|si)|bagiduit$/i
 
 module.exports = handler
