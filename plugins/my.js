@@ -1,4 +1,4 @@
-const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
+const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys')
 let fs = require('fs')
 let handler = async (m) => {
     let who
@@ -18,18 +18,18 @@ let anu = `╭───❑ 「 BALANCE 」 ❑────
          hydratedTemplate: {
            hydratedContentText: anu,
            locationMessage: { 
-           jpegThumbnail: fs.readFileSync('./media/bank.jpg') }, 
+           jpegThumbnail: 'https://telegra.ph/file/4742584d62e0717ab4a16.jpg', 
            hydratedFooterText: wm,
            hydratedButtons: [{
              urlButton: {
-               displayText: '📍instagram',
-               url: instagram
+               displayText: '💠 Source Code',
+               url: 'https://youtu.be/AqIPxerS7XI'
              }
 
            },
                {
              quickReplyButton: {
-               displayText: 'Back To Menu',
+               displayText: '🔙 Back To Menu',
                id: '.menu',
              }
 
@@ -44,8 +44,8 @@ let anu = `╭───❑ 「 BALANCE 」 ❑────
          { messageId: template.key.id }
      )
 }
-handler.help = ['dompet', 'dompet @user', 'profile']
+handler.help = ['my', 'my @user']
 handler.tags = ['xp']
-handler.command = /^(my|dompet|profile)$/i
+handler.command = /^(my)$/i
 
 module.exports = handler
